@@ -1,28 +1,16 @@
 
-h3 {
+h2 {
     font-family: sans-serif;
     color: #25292e;
-    font-size: 2rem;
+    font-size: 2rem;  
 }
 p {
     color: #25292e;
     font-family: sans-serif;
-}
-figcaption {
-    color: #25292e;
-    font-family: sans-serif;
-}
-aside a {
-    font-family: sans-serif;
-    color: lightskyblue;
-    text-decoration: none;
-}
-aside {
-    float: right;
-    padding: 1rem;
-    float: right;
+    font-size: 17px;
 }
 .header-banner {
+    background-image: url(lesson04-mock2-banner-image.jpg);
     background-color: #3192aa;
     color: white;
     font-size: 27px;
@@ -31,12 +19,13 @@ aside {
     margin-right: 2rem;
     margin-left: 2rem;
 }
-.white-text {
+header p.white-text {
     color: white;
     font-size: 25px;
-    font-style: italic;   
+    font-style: italic; 
+    width: 350px;   
 }
-ul.breadcrumb {
+ul.menu {
     background-color: lightgray;
     color: #25292e;
     padding: 2rem 10rem; 
@@ -47,16 +36,93 @@ ul.breadcrumb {
     margin-right: 2rem;
     margin-left: 2rem;
 }
-ul.breadcrumb li {
+ul.menu li {
     display: inline;
     font-size: 18px;
   }
-  ul.breadcrumb li+li:before {
+  ul.menu li+li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
   }
-  ul.breadcrumb li a {
+  ul.menu li a {
     color: black;
     text-decoration: none;
+  }
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 3rem;
+}
+.main-box {
+   padding: 0rem 1.5rem; 
+}
+.side-box {
+    padding: 0rem 1.5rem;
+}
+h3.blue-text {
+    color: #3192aa;
+    font-size: 22px;
+}
+span.lightblue-text {
+    color: rgb(124, 204, 231);
+}
+h4 {
+    color: rgb(124, 204, 231);
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-top: 3rem;
+    padding-bottom: 3rem;   
+}
+a {
+    color: rgb(124, 204, 231);
+    font-family: sans-serif;
+}
+.footer-cat-logo {
+    background-image: url(lesson04-mock4-footer-image.jpg);
+    background-color: grey;
+    color: white;
+    font-size: 27px;
+    font-family: sans-serif;
+    padding: 4rem 10rem 1rem;
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+footer p.white-text {
+    color: white;
+}
+ul.footer-menu {
+
+    color: white;
+    padding: 1rem 10rem; 
+    list-style: none;  
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+ul.footer-menu li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.footer-menu li+li:before {
+    padding: 8px;
+    color: white;
+    content: "/\00a0";
+  }
+  ul.footer-menu li a {
+    color: white;
+    text-decoration: none;
+  }
+.copyright {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
   }
