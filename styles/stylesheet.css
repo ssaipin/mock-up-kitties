@@ -25,29 +25,21 @@ header p.white-text {
     font-style: italic; 
     width: 350px;   
 }
-ul.menu {
-    background-color: lightgray;
-    color: #25292e;
-    padding: 2rem 10rem; 
-    list-style: none;  
-    font-family: sans-serif;
-    font-weight: 700;
-    margin-top: 0;
-    margin-right: 2rem;
-    margin-left: 2rem;
-}
-ul.menu li {
-    display: inline;
+  .menu {
+    margin: 0 2rem;
+    background-color: rgb(211, 211, 211);
+    padding: 2rem 10rem;
+  }
+  .menu a {
     font-size: 18px;
-  }
-  ul.menu li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-  }
-  ul.menu li a {
     color: black;
     text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+  .menu a+a:before {
+    content: "/\00a0";
+    padding: 8px;
   }
 .flex-container {
     display: flex;
@@ -64,14 +56,14 @@ ul.menu li {
     padding: 0rem 1.5rem;
 }
 h3.blue-text {
-    color: #3192aa;
+    color: #2A7D92;
     font-size: 22px;
 }
 span.lightblue-text {
-    color: rgb(124, 204, 231);
+    color: blue;
 }
 h4 {
-    color: rgb(124, 204, 231);
+    color: blue;
     font-size: 22px;
     font-family: sans-serif;
     font-weight: 500;
@@ -79,7 +71,7 @@ h4 {
     padding-bottom: 3rem;   
 }
 a {
-    color: rgb(124, 204, 231);
+    color: blue;
     font-family: sans-serif;
 }
 .footer-cat-logo {
@@ -96,33 +88,33 @@ a {
 footer p.white-text {
     color: white;
 }
-ul.footer-menu {
-
-    color: white;
-    padding: 1rem 10rem; 
-    list-style: none;  
-    font-family: sans-serif;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 0;
-    margin-right: 2rem;
-    margin-left: 2rem;
+.footer-menu {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-ul.footer-menu li {
-    display: inline;
+.footer-menu a {
     font-size: 18px;
-  }
-  ul.footer-menu li+li:before {
-    padding: 8px;
-    color: white;
-    content: "/\00a0";
-  }
-  ul.footer-menu li a {
     color: white;
     text-decoration: none;
-  }
+    font-family: sans-serif;
+    font-weight: 700;
+
+}
+.footer-menu a+a:before {
+    content: "/\00a0";
+    padding: 8px;
+}
+
 .copyright {
     color: white;
     font-family: sans-serif;
     text-align: center;
+  }
+  .hidden {
+    position: relative;
+    left: -10000px;
+    top: auto;
+  }
+  .hidden:focus {
+    left: 0;
   }
