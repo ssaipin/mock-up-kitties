@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   <title>Kitties Mock Up</title>
 </head>
@@ -54,14 +56,20 @@
       <a href="#">Find out more >></a>
 
       <h2>CAT OF THE WEEK</h2>
-      <img src="lesson04-mock3-sidebar-cat.jpg" alt="cute gray cat with green eyes">
+      <img class="responsive-img" src="lesson04-mock3-sidebar-cat.jpg" alt="adorable gray cat with green eyes">
       <p>Stare at imaginary bug love blinks and purr purr purr purr.</p>
       <a href="#">Book Now >></a>
     </aside>
   </div>
 
   <footer class="footer-cat-logo">
-    <img src="lesson04-mock5-cat-logo.png" alt="white cat logo">
+    <img 
+        src="lesson04-mock5-cat-logo.png" 
+        alt="white cat logo"
+        srcset="lesson04-mock5-cat-logo.png 100w"              
+        sizes="(max-width: 100px) 50px, 83px" 
+    />    
+    
     <p class="white-text">Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
       esseque invenienihil imaximu scideru ptistiusam consequunt</p>
 

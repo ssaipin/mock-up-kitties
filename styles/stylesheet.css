@@ -10,8 +10,15 @@ p {
     font-size: 17px;
 }
 .header-banner {
+    width: auto;
+    height: auto;
+
+    background: linear-gradient(to top, #3192aa, white) ;
     background-image: url(lesson04-mock2-banner-image.jpg);
-    background-color: #3192aa;
+    background-repeat: tile;
+    background-size: cover;
+    background-position: center right;
+
     color: white;
     font-size: 27px;
     font-family: sans-serif;
@@ -27,7 +34,7 @@ header p.white-text {
 }
   .menu {
     margin: 0 2rem;
-    background-color: rgb(211, 211, 211);
+    background: radial-gradient(white,gray);
     padding: 2rem 10rem;
   }
   .menu a {
@@ -75,8 +82,15 @@ a {
     font-family: sans-serif;
 }
 .footer-cat-logo {
+    width: auto;
+    height: auto;
+   
+    background: radial-gradient(gray, black);
     background-image: url(lesson04-mock4-footer-image.jpg);
-    background-color: grey;
+    background-repeat: tile;
+    background-size: cover;
+    background-position: center center;
+
     color: white;
     font-size: 27px;
     font-family: sans-serif;
@@ -117,4 +131,25 @@ footer p.white-text {
   }
   .hidden:focus {
     left: 0;
+  }
+  .responsive-img {
+    display: block;
+    width: 100%;
+    height: 256px;
+  }
+  @media (min-width: 300px) {
+    .responsive-img {
+        width: 320px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-bottom: 3rem;
+    }
   }
