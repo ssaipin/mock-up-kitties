@@ -2,7 +2,7 @@
 h2 {
     font-family: sans-serif;
     color: #25292e;
-    font-size: 2rem;  
+    font-size: 1.6rem;  
 }
 p {
     color: #25292e;
@@ -51,8 +51,8 @@ header p.white-text {
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     margin-bottom: 3rem;
 }
 .main-box {
@@ -130,20 +130,9 @@ footer p.white-text {
   .hidden:focus {
     left: 0;
   }
- 
 
-  
-  @media (min-width: 768px) , (max-width: 1200px)  {
-    .flex-container {
-        display: flex;
-        flex-direction: row;
-        margin-top: 2rem;
-        margin-left: 10rem;
-        margin-right: 10rem;
-        margin-bottom: 3rem;
-    }
-  }
- @media (max-width: 480px) {
+ /* mobile device */
+ @media (max-width: 767px) {
   .flex-container {
     display: flex;
     flex-direction: column;
